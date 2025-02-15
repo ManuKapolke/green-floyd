@@ -1,0 +1,33 @@
+.root {
+  display: grid;
+  grid-template-columns: 128px 1fr;
+  align-items: center;
+  padding: 8px 64px 8px 4px;
+  color: hsl(230deg 75% 88%);
+  // background-color: hsl(240deg 40% 5% / 50%);
+}
+
+.logo img {
+  height: 64px;
+  width: auto;
+}
+
+.navList {
+  display: flex;
+  justify-content: flex-end;
+  gap: 32px;
+
+  li {
+    list-style: none;
+
+    a {
+      font-weight: 700;
+      text-decoration: none;
+      color: hsl(230deg 90% 95%);
+
+      &:hover {
+        color: hsl(122, 100%, 40%);
+      }
+    }
+  }
+}
