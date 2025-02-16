@@ -1,73 +1,21 @@
-/*
-  Josh's Custom CSS Reset
-  https://www.joshwcomeau.com/css/custom-css-reset/
-*/
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-* {
-    margin: 0;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    font-family: 'Lato', sans-serif;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    overflow-wrap: break-word;
-}
-
-#root,
-#__next {
-    isolation: isolate;
-}
-
 /* Custom global styles */
 html {
     color-scheme: dark;
 
-    --color-notice: hsl(235deg 100% 50%);
-    --color-notice-bg: hsl(235deg 0% 100%);
-    --color-warning: hsl(35deg 100% 46%);
-    --color-warning-bg: hsl(40deg 100% 94%);
-    --color-success: hsl(120deg 80% 35%);
-    --color-success-bg: hsl(120deg 90% 96%);
-    --color-error: hsl(345deg 100% 50%);
-    --color-error-bg: hsl(350deg 90% 96%);
+    // --font-color-main: hsl(230deg 90% 95%);
+    // --font-color-hover: hsla(292, 100%, 70%, 0.667);
+    // --font-color-emphasized: hsl(230deg 75% 88%);
+    // --header-color-bg: none;
+    // --footer-color-bg: hsl(240deg 40% 5% / 50%);
+    // --shadow-color: 250deg 35% 11%;
 
-    --shadow-color: 250deg 35% 11%;
+    --font-color-main: hsl(120deg 90% 95%);
+    --font-color-hover: hsl(122deg 100% 40%);
+    --font-color-emphasized: hsl(120deg 75% 88%);
+    --header-color-bg: none;
+    --footer-color-bg: hsl(120deg 40% 5% / 50%);
+    --shadow-color: 120deg 35% 11%;
+
     /* prettier-ignore */
     --shadow-elevation-low:
         0px 0.6px 0.6px hsl(var(--shadow-color) / 0.26),
@@ -94,18 +42,18 @@ html {
 
 body {
     background-attachment: fixed;
-    background-image: conic-gradient(from 270deg at 50% -20%,
-            hsl(240deg 40% 5%) 50%,
-            hsl(250deg 40% 20%),
-            hsl(250deg 30% 25%),
-            hsl(250deg 40% 20%),
-            hsl(240deg 40% 5%));
     // background-image: conic-gradient(from 270deg at 50% -20%,
-    //         hsl(120, 40%, 5%) 50%,
-    //         hsl(120, 40%, 20%),
-    //         hsl(120, 30%, 25%),
-    //         hsl(120, 40%, 20%),
-    //         hsl(120, 40%, 5%));
+    //         hsl(240deg 40% 5%) 50%,
+    //         hsl(250deg 40% 20%),
+    //         hsl(250deg 30% 25%),
+    //         hsl(250deg 40% 20%),
+    //         hsl(240deg 40% 5%));
+    background-image: conic-gradient(from 270deg at 50% -20%,
+            hsl(120, 40%, 5%) 50%,
+            hsl(120, 40%, 20%),
+            // hsl(120, 30%, 25%),
+            // hsl(120, 40%, 20%),
+            hsl(120, 40%, 5%));
 }
 
 .filter {
@@ -113,7 +61,9 @@ body {
     transition: filter 300ms;
 
     &:hover {
-        filter: drop-shadow(0 0 12em #646cffaa);
+        // filter: drop-shadow(0 0 12em hsla(237, 100%, 70%, 0.667));
+        // filter: drop-shadow(0 0 12em hsla(99, 100%, 70%, 0.667));
+        filter: drop-shadow(0 0 12em var(--font-color-hover));
     }
 }
 
