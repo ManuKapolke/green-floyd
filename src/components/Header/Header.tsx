@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styles from './Header.module.less';
 
 export const Header = () => {
@@ -9,28 +10,28 @@ export const Header = () => {
             <nav>
                 <ul className={styles.navList}>
                     <li>
-                        <a href="#">Home</a>
+                        <NavLink to="/">Home</NavLink>
                     </li>
                     <li>
-                        <a href="#">Konzerte</a>
+                        <NavLink to="/konzerte">Konzerte</NavLink>
                     </li>
                     <li>
-                        <a href="#">Green & Symphonic Floyd</a>
+                        <NavLink to="/about">Green & Symphonic Floyd</NavLink>
                     </li>
                     <li>
-                        <a href="#">Pressespiegel</a>
+                        <NavLink to="/press">Pressespiegel</NavLink>
                     </li>
                     <li>
-                        <a href="#">CD & Vinyl</a>
+                        <NavLink to="/audio">CD & Vinyl</NavLink>
                     </li>
                     <li>
-                        <a href="#">Galerie</a>
+                        <NavLink to="/gallery">Galerie</NavLink>
                     </li>
                     <li>
-                        <a href="#">Videos</a>
+                        <NavLink to="/video">Videos</NavLink>
                     </li>
                     <li>
-                        <a href="#">Kontakt</a>
+                        <NavLink to="/contact">Kontakt</NavLink>
                     </li>
                 </ul>
             </nav>
