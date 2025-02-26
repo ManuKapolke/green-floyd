@@ -12,7 +12,9 @@ export const Layout = () => {
           <img alt="Green Floyd Poster" src="src/assets/greenfloyd2025.jpeg" className='filter' />
         </div>
       </div> */}
-            <Outlet />
+            <div className={styles.content}>
+                <Outlet />
+            </div>
             <Footer />
         </div>
     );

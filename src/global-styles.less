@@ -5,6 +5,7 @@ html {
     // --font-color-main: hsl(230deg 90% 95%);
     // --font-color-hover: hsla(292, 100%, 70%, 0.667);
     // --font-color-emphasized: hsl(230deg 75% 88%);
+    // --font-color-headline: hsl(312, 45%, 47%);
     // --header-color-bg: none;
     // --footer-color-bg: hsl(240deg 40% 5% / 50%);
     // --shadow-color: 250deg 35% 11%;
@@ -12,6 +13,8 @@ html {
     --font-color-main: hsl(120deg 90% 95%);
     --font-color-hover: hsl(122deg 100% 40%);
     --font-color-emphasized: hsl(120deg 75% 88%);
+    --font-color-textlink: hsl(120, 40%, 40%);
+    --font-color-headline: hsl(312, 45%, 47%);
     --header-color-bg: none;
     --footer-color-bg: hsl(120deg 40% 5% / 50%);
     --shadow-color: 120deg 35% 11%;
@@ -54,6 +57,27 @@ body {
             // hsl(120, 30%, 25%),
             // hsl(120, 40%, 20%),
             hsl(120, 40%, 5%));
+
+    color: var(--font-color-main);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--font-color-headline);
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color-textlink);
+
+    &:hover {
+        color: var(--font-color-hover);
+        text-decoration: none;
+    }
 }
 
 .filter {

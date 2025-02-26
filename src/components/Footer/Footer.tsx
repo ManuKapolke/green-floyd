@@ -11,7 +11,7 @@ export const Footer = () => {
           Datenschutz
         </a>
       </div>
-      <p>© 2025-present Green Floyd. All rights reserved.</p>
+      <p>© 2025 Green Floyd. All rights reserved.</p>
     </footer>
   );
 };
