@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Layout } from "../../pages/Layout/Layout";
 import { Home } from "../../pages/Home/Home";
 import { Concerts } from "../../pages/Concerts/Concerts";

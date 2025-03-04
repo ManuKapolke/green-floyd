@@ -1,9 +1,19 @@
 .root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  z-index: 1;
   display: grid;
   grid-template-columns: 128px 1fr;
   align-items: center;
   padding: 8px 64px 8px 4px;
   background-color: var(--header-color-bg);
+
+  &.scrolled {
+    backdrop-filter: blur(10px);
+  }
 }
 
 .logo img {
@@ -23,6 +33,10 @@
       font-weight: 700;
       text-decoration: none;
       color: var(--font-color-main);
+
+      &.active {
+        color: var(--font-color-headline);
+      }
 
       &:hover {
         color: var(--font-color-hover);

@@ -1,6 +1,12 @@
 /* Custom global styles */
+:root {
+    --page-top-padding: 120px;
+    --page-side-padding: max(12vw, calc(.5*(100vw - 1920px)));
+}
+
 html {
     color-scheme: dark;
+    scroll-behavior: smooth;
 
     // --font-color-main: hsl(230deg 90% 95%);
     // --font-color-hover: hsla(292, 100%, 70%, 0.667);
@@ -62,11 +68,7 @@ body {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
     color: var(--font-color-headline);
 }
 
